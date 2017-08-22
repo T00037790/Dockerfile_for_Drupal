@@ -21,12 +21,12 @@ RUN apt-get install -y \
 	mysql-server \
 	mysql-client \
 	openssh-server \
+	phpmyadmin \
 	wget \
 	unzip \
 	cron \
         gnupg \
 	supervisor
-RUN apt-get install -y phpmyadmin
 RUN apt-get clean
 
 # Setup PHP.
