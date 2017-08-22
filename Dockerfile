@@ -2,6 +2,7 @@ FROM debian
 MAINTAINER Alvaro <1995alvarohernandez@gmail.com>
 ENV ubnutu noninteractive
 ENV DRUPAL_VERSION 8.3.6
+RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 # Install packages.
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
