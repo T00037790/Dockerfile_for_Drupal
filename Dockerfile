@@ -1,6 +1,6 @@
 FROM debian
 MAINTAINER Alvaro <1995alvarohernandez@gmail.com>
-ENV ubnutu noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 ENV DRUPAL_VERSION 8.3.6
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
