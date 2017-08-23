@@ -10,7 +10,7 @@ Esta imagen contiene:
 * MariaDB 10.1
 * PHP 7.0
 * Drush 8
-* The latest release of Drupal Console (for `8` and `8.*.*` tags)
+* La última versión de Drupal Console para drupal 8.3.6
 * Drupal 8.3.6
 * Composer
 * PHPMyAdmin
