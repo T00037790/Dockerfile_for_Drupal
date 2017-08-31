@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  web:
+    build: .
+    labels:
+      kompose.service.type: nodeport
+    ports:
+      - '80:80'
+      - '443:443'
+volumes:
+  mariadb_data:
+    driver: local
+  drupal_data:
+    driver: local
